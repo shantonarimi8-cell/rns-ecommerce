@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(45,45%,90%)"/>
+      <stop offset="100%" stop-color="hsl(70,40%,78%)"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.12"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="hsl(45,40%,30%)" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="440" r="320" fill="url(#spot)"/>
+  <circle cx="400" cy="440" r="250" fill="none" stroke="#fff" stroke-width="3" opacity="0.6"/>
+  <g transform="translate(400 440) rotate(-8) scale(1.1) translate(-200 -200)" filter="url(#shadow)">
+    
+      <rect x="120" y="100" width="36" height="200" rx="14" fill="#645737"/>
+      <rect x="244" y="100" width="36" height="200" rx="14" fill="#645737"/>
+      <path d="M160 100 Q200 50 240 100" stroke="#645737" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <rect x="100" y="90" width="200" height="290" rx="44" fill="#9a8655" stroke="rgba(17,24,39,0.35)" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M110 180 Q200 150 290 180" stroke="#645737" stroke-width="4" fill="none" stroke-dasharray="8 6"/>
+      <rect x="140" y="240" width="120" height="110" rx="22" fill="#88764b" stroke="rgba(17,24,39,0.35)" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M150 262 Q200 250 250 262" stroke="#645737" stroke-width="4" fill="none" stroke-dasharray="8 6"/>
+      <rect x="190" y="150" width="20" height="30" rx="4" fill="#645737"/>
+  </g>
+  <text x="40" y="70" font-family="Georgia,serif" font-weight="bold" font-size="28" fill="#8b1a4a" opacity="0.8">RNS</text>
+  <rect x="620" y="40" width="140" height="40" rx="20" fill="#111827" opacity="0.75"/><text x="690" y="67" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#fff">Alt view</text>
+  <text x="400" y="870" text-anchor="middle" font-family="Georgia,serif" font-size="46" fill="#1f2937">Canvas Backpack</text>
+  <text x="400" y="915" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" letter-spacing="4" fill="#6b7280">CANVAS BACKPACK</text>
+</svg>

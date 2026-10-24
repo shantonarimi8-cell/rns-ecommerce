@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(40,45%,95%)"/>
+      <stop offset="100%" stop-color="hsl(65,40%,84%)"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.12"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="hsl(40,40%,30%)" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="440" r="290" fill="url(#spot)"/>
+  
+  <g transform="translate(400 440) rotate(0) scale(1.1) translate(-200 -200)" filter="url(#shadow)">
+    
+      <path d="M120 60 L175 35 Q200 62 225 35 L280 60 L330 150 L280 170 L280 390 L120 390 L120 170 L70 150 Z" fill="#f3e5c3" stroke="rgba(17,24,39,0.35)" stroke-width="4" stroke-linejoin="round"/>
+      <rect x="188" y="62" width="24" height="110" rx="4" fill="none" stroke="#aaa089" stroke-width="3"/>
+      <circle cx="200" cy="85" r="4" fill="#aaa089"/><circle cx="200" cy="110" r="4" fill="#aaa089"/><circle cx="200" cy="135" r="4" fill="#aaa089"/><circle cx="200" cy="160" r="4" fill="#aaa089"/>
+      <line x1="120" y1="330" x2="120" y2="390" stroke="#aaa089" stroke-width="5"/>
+      <line x1="280" y1="330" x2="280" y2="390" stroke="#aaa089" stroke-width="5"/>
+      <path d="M140 230 L260 230" stroke="#aaa089" stroke-width="2" opacity="0.5"/>
+  </g>
+  <text x="40" y="70" font-family="Georgia,serif" font-weight="bold" font-size="28" fill="#8b1a4a" opacity="0.8">RNS</text>
+  
+  <text x="400" y="870" text-anchor="middle" font-family="Georgia,serif" font-size="46" fill="#1f2937">Linen Panjabi</text>
+  <text x="400" y="915" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" letter-spacing="4" fill="#6b7280">LINEN PANJABI</text>
+</svg>

@@ -6,21 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "contract:emit": "prisma contract emit",
+    "db:plan": "prisma migration plan",
+    "db:migrate": "prisma db migrate --advance-ref db",
+    "db:seed": "tsx seed.ts",
+    "seed:images": "node scripts/generate-seed-images.mjs",
+    "test:seed-images": "node --test scripts/generate-seed-images.test.mjs",
+    "test:auth": "tsx --test app/lib/__tests__/*.test.mts",
+    "test": "npm run test:auth && npm run test:seed-images",
+    "postinstall": "prisma skills sync || exit 0"
   },
   "dependencies": {
+    "@prisma/client": "^7.10.1",
+    "@prisma/orm-postgres": "^8.0.0-rc.20",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.9",
     "next": "16.3.6",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
+    "@prisma/cli-engine": "^0.4.0",
     "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
+    "prisma": "^8.0.0-rc.27",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
